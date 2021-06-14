@@ -20,7 +20,6 @@ const LaunchIndex = () => {
               View
             </Link>
           </div>
-          // </Link>
         );
       })}
     </>

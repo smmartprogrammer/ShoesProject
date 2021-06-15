@@ -20,7 +20,7 @@ const LaunchIndex = () => {
                   <p className="info__price">{shoeObj.price}</p>
                 </div>
                 <Link to={`/launchIndex/${shoeObj}`} className="info_button">
-                  View
+                  View Button
                 </Link>
               </div>
             );

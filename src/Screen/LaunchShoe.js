@@ -3,9 +3,9 @@ import Shoes from '../shoes.json';
 import { useParams } from 'react-router';
 
 const LaunchShoe = () => {
-  const { slug } = useParams();
-  const shoe = Shoes[slug];
-
+  const { id } = useParams();
+  const shoe = Shoes[id];
+  console.log(shoe);
   if (!shoe) {
     return <h2>Not found</h2>;
   }
@@ -15,7 +15,7 @@ const LaunchShoe = () => {
     <div>
       <h2>{name} </h2>
       <img src={img} alt={name} />
-      {slug}
+      <h2>{price} </h2>
     </div>
   );
 };

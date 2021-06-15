@@ -23,6 +23,8 @@ export default function AppRouter() {
         <Route path="*" element={<Notfound />} /> */}
         <Route exact path="/" element={<HomeScreen />} />
         <Route exact path="/launchindex" element={<LaunchIndex />} />
+        <Route exact path="/launchindex/:id" element={<LaunchShoe />} />
+
         <Route exact path="*" element={<Notfound />} />
       </Routes>
     </Router>

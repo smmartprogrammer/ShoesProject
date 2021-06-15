@@ -19,8 +19,9 @@ const LaunchIndex = () => {
                   <p className="info__name"> {shoeObj.name} </p>
                   <p className="info__price">{shoeObj.price}</p>
                 </div>
-                <Link to={`/launchIndex/${shoeObj}`} className="info_button">
-                  View Button
+
+                <Link to={`/launchIndex/${keyName}`} className="info_button">
+                  View
                 </Link>
               </div>
             );
@@ -31,11 +32,3 @@ const LaunchIndex = () => {
   );
 };
 export default LaunchIndex;
-
-{
-  /* <Link to={`/launch/${slug}`}>
-<h2>{name}</h2>
-<img src={img} alt={name} />
-<h2>{price}</h2>
-</Link> */
-}

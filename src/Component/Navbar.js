@@ -40,7 +40,7 @@ export default function ButtonAppBar() {
           <Link to="/">
             <Button color="inherit">Home</Button>
           </Link>
-          <Link to="/product">
+          <Link to="/launchIndex">
             <Button color="inherit">Product</Button>
           </Link>
         </Toolbar>

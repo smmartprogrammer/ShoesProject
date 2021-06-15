@@ -15,12 +15,15 @@ export default function AppRouter() {
         <Navbar />
       </nav>
       <Routes>
-        <Route path="/" element={<HomeScreen />} />
+        {/* <Route path="/" element={<HomeScreen />} />
         <Route path="/launch" element={<Launch />}>
           <Route path="/" element={<LaunchIndex />} />
           <Route path=":keyName" element={<LaunchShoe />} />
         </Route>
-        <Route path="*" element={<Notfound />} />
+        <Route path="*" element={<Notfound />} /> */}
+        <Route exact path="/" element={<HomeScreen />} />
+        <Route exact path="/launchindex" element={<LaunchIndex />} />
+        <Route exact path="*" element={<Notfound />} />
       </Routes>
     </Router>
   );

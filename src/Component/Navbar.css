@@ -4,4 +4,10 @@
 
 Link {
   color: white !important;
+  font-weight: bold;
+}
+
+.MuiButton-label {
+  color: white !important;
+  font-weight: bold;
 }

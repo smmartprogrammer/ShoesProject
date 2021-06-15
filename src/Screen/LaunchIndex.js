@@ -6,22 +6,27 @@ import './LaunchIndex.css';
 const LaunchIndex = () => {
   return (
     <>
-      {Object.keys(shoes).map((keyName) => {
-        const shoeObj = shoes[keyName];
-        return (
-          // <Link to={`/launch/${keyName}`}>
-          <div className="product" key={keyName}>
-            <img src={shoeObj.img} alt="product image" />
-            <div className="product__info">
-              <p className="info__name"> {shoeObj.name} </p>
-              <p className="info__price">{shoeObj.price}</p>
-            </div>
-            <Link to={`/launchShoe/${shoes}`} className="info_button">
-              View
-            </Link>
-          </div>
-        );
-      })}
+      <div className="homescreen">
+        <h2 className="homescreen__title">Welcome to Product</h2>
+
+        <div className="homescreen__products">
+          {Object.keys(shoes).map((keyName) => {
+            const shoeObj = shoes[keyName];
+            return (
+              <div className="product" key={keyName}>
+                <img src={shoeObj.img} alt="product image" />
+                <div className="product__info">
+                  <p className="info__name"> {shoeObj.name} </p>
+                  <p className="info__price">{shoeObj.price}</p>
+                </div>
+                <Link to={`/launchIndex/${shoeObj}`} className="info_button">
+                  View
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };
